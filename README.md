@@ -37,12 +37,12 @@
 > Low-fidelity Mock-up (stored in assets/mock-up)
 
 - [Form being completed](https://github.com/stephane-englebert/hackers-poulette/blob/main/assets/mock-up/form_before_submit.JPG)
-- [Invalid fields](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/invalid_fields.JPG)
-- [Thanks](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/thanks.JPG)
+- [Invalid fields](https://github.com/stephane-englebert/hackers-poulette/blob/main/assets/mock-up/invalid_fields.JPG)
+- [Thanks](https://github.com/stephane-englebert/hackers-poulette/blob/main/assets/mock-up/thanks.JPG)
 
 > Plan the work ahead -> define process
 
-- [Process](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/hackers_poulette_process.png)
+- [Process](https://github.com/stephane-englebert/hackers-poulette/blob/main/assets/mock-up/hackers_poulette_process.png)
 
 ## Team's members
 
@@ -50,12 +50,12 @@
 
 ## Used languages
 
-> HTML5
-> CSS3
-> Javascript
-> SASS
-> Skeleton
-> Php
+- HTML5
+- CSS3
+- Javascript
+- SASS
+- Skeleton
+- Php
 
 ## Hosted on Github & private website
 
@@ -67,7 +67,7 @@
 ## Fonts Credits
 
 > Bellota
-> [Fontsuirrel.com](https://www.fontsquirrel.com/fonts/bellota)
+> [Fontsquirrel.com](https://www.fontsquirrel.com/fonts/bellota)
 
 ## Pictures Credits
 
