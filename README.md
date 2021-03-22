@@ -36,7 +36,7 @@
 
 > Low-fidelity Mock-up (stored in assets/mock-up)
 
-- [Form being completed](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/form_before_submit.JPG)
+- [Form being completed](https://github.com/stephane-englebert/hackers-poulette/blob/main/assets/mock-up/form_before_submit.JPG)
 - [Invalid fields](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/invalid_fields.JPG)
 - [Thanks](https://github.com/stephane-englebert/hackers-poulette.git/assets/mock-up/thanks.JPG)
 
