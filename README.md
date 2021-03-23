@@ -59,8 +59,8 @@
 
 ## Hosted on Github & private website
 
-[Project files](https://github.com/stephane-englebert/hackers-poulette.git/)
-[Php Website](https://stephaneenglebert.be/becodepjt/hackers-poulette/)
+- [Project files](https://github.com/stephane-englebert/hackers-poulette.git/)
+- [Php Website](https://stephaneenglebert.be/becodepjt/hackers-poulette/)
 
 ## Screenshots
 
