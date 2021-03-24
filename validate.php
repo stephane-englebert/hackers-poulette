@@ -118,8 +118,7 @@
                 $mail->Host = "mail.infomaniak.com";
                 $mail->Port = 465; // or 587
                 $mail->IsHTML(true);
-                $mail->Username = "contact@code-factory.be";
-                $mail->Password = "pS10sn14rn46";
+
                 $mail->SetFrom("contact@stephaneenglebert.be");
                 $mail->Subject = "Test";
                 $mail->Body = "Hello";
