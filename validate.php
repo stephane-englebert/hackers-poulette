@@ -1,4 +1,6 @@
 <?php
+    require("assets/PHPMailer-master/src/PHPMailer.php");
+    require("assets/PHPMailer-master/src/SMTP.php");
     function keep_auth_chars($type,$chain){
         $auth_chars = "";
         $result_chain = "";
@@ -105,7 +107,32 @@
         //======================
         //   Sending email
         //======================
-            
+            if($valid_fields == true){
+                echo "Mail sent...";
+                $mail = new PHPMailer\PHPMailer\PHPMailer();
+                $mail->IsSMTP(); // enable SMTP
+
+                $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+                $mail->SMTPAuth = true; // authentication enabled
+                $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+                $mail->Host = "mail.infomaniak.com";
+                $mail->Port = 465; // or 587
+                $mail->IsHTML(true);
+                $mail->Username = "contact@code-factory.be";
+                $mail->Password = "pS10sn14rn46";
+                $mail->SetFrom("contact@stephaneenglebert.be");
+                $mail->Subject = "Test";
+                $mail->Body = "Hello";
+                $mail->AddAddress($email);
+
+                if(!$mail->Send()) {
+                    echo "Mailer Error: " . $mail->ErrorInfo;
+                } else {
+                    echo "Message has been sent";
+                }
+            }else{
+                echo "Mail not sent...";
+            }
     }else{
         //======================
         //   First time init
