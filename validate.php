@@ -126,8 +126,7 @@
                 $mail->Host = "mail.infomaniak.com";
                 $mail->Port = 465; 
                 $mail->IsHTML(true);
-                $mail->Username = "contact@code-factory.be";
-                $mail->Password = "pS10sn14rn46";
+
                 $mail->SetFrom("contact@stephaneenglebert.be");
                 $mail->Subject = "Contact support Hackers-Poulette";
                 $mail->Body = $thanks_msg.$message;
