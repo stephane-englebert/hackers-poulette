@@ -87,7 +87,12 @@
             }
         //=== SUBJECT
             if($subject != "none"){
-
+                $subject_mail = "";
+                switch($subject){
+                    case "info":$subject_mail = "asking for information"; break;
+                    case "replace":$subject_mail = "replacement - repair"; break;
+                    case "refund":$subject_mail = "refund"; break;
+                }
             }else{
                 $valid_fields = false;
                 $err_messages[5] ="Subject not selected"; 
@@ -107,31 +112,31 @@
         //======================
         //   Sending email
         //======================
+            $thanks_msg = "Thanks for your feedback!\r\n";
+            $thanks_msg .= "Our support team will follow up and get back to you within 48 hours.\n";
+            $thanks_msg .= "Here is a copy of your message : <br>";
+            $thanks_msg .= "Subject: ".$subject_mail."\n\n";
+            $thanks_msg .= "Message: \n\n";
             if($valid_fields == true){
-                echo "Mail sent...";
                 $mail = new PHPMailer\PHPMailer\PHPMailer();
                 $mail->IsSMTP(); // enable SMTP
-
-                $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+                $mail->SMTPDebug = 2; // debugging: 1 = errors and messages, 2 = messages only
                 $mail->SMTPAuth = true; // authentication enabled
                 $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
                 $mail->Host = "mail.infomaniak.com";
-                $mail->Port = 465; // or 587
+                $mail->Port = 465; 
                 $mail->IsHTML(true);
                 $mail->Username = "contact@code-factory.be";
                 $mail->Password = "pS10sn14rn46";
                 $mail->SetFrom("contact@stephaneenglebert.be");
-                $mail->Subject = "Test";
-                $mail->Body = "Hello";
+                $mail->Subject = "Contact support Hackers-Poulette";
+                $mail->Body = $thanks_msg.$message;
                 $mail->AddAddress($email);
-
                 if(!$mail->Send()) {
                     echo "Mailer Error: " . $mail->ErrorInfo;
-                } else {
-                    echo "Message has been sent";
+                }else{
+                    header("location:thanks.php");
                 }
-            }else{
-                echo "Mail not sent...";
             }
     }else{
         //======================

@@ -1,0 +1,49 @@
+body {
+  background-color: #0d8187;
+}
+body header {
+  height: 250px;
+  background-color: #303030;
+  padding: 20px !important;
+}
+body header a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+}
+body header .linkMenu {
+  color: #15c5bd;
+}
+body header div {
+  color: #303030;
+}
+body header div h1 {
+  color: #ffffff;
+}
+body header div div {
+  text-align: right;
+}
+body main {
+  background-color: #ffffff;
+  padding: 20px !important;
+}
+body main #rasp {
+  margin-top: 25vh;
+  vertical-align: middle;
+}
+body main .gender {
+  display: inline imp !important;
+}
+body main #btn_submit {
+  background-color: #303030;
+  color: #ffffff;
+}
+body footer {
+  height: 100px;
+  background-color: #303030;
+  padding: 30px !important;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

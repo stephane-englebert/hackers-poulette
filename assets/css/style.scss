@@ -1,0 +1,57 @@
+$dark-color: #303030;
+$dark-turquoise: #0d8187;
+$clear-turquoise: #15c5bd;
+$clear-color: #ffffff;
+body {
+  background-color: $dark-turquoise;
+  header {
+    height: 250px;
+    background-color: $dark-color;
+    padding: 20px !important;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 24px;
+      color: $clear-color;
+    }
+    .linkMenu {
+      color: $clear-turquoise;
+    }
+    div {
+      color: $dark-color;
+      h1 {
+        color: $clear-color;
+      }
+    }
+    div {
+      div {
+      }
+      div {
+        text-align: right;
+      }
+    }
+  }
+  main {
+    background-color: $clear-color;
+    padding: 20px !important;
+    #rasp {
+      margin-top: 25vh;
+      vertical-align: middle;
+    }
+    .gender {
+      display: inline imp !important;
+    }
+    #btn_submit {
+      background-color: $dark-color;
+      color: $clear-color;
+    }
+  }
+  footer {
+    height: 100px;
+    background-color: $dark-color;
+    padding: 30px !important;
+    text-align: center;
+    font-size: 18px;
+    color: $clear-color;
+  }
+}
